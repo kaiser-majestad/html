@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Diseñador Gráfico</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            color: #000;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f8f8f8;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contenido {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            background-color: #000000;
+        }
+
+        .contenido div {
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            margin: 1rem;
+            padding: 1rem;
+            width: calc(33% - 2rem);
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenido img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio de Diseñador Gráfico</h1>
+    </header>
+    
+    <nav>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main class="contenido">
+        <div id="trabajos">
+            <h2>Mis Trabajos</h2>
+            <p>Aquí se mostrarán algunos de mis trabajos más destacados.</p>
+            <img src="tr.jpg" alt="Trabajo">
+            <img src="tr2.jpg" alt="Trabajo">
+        </div>
+        <div id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Breve descripción sobre mí y mi carrera como diseñador gráfico, En si como diseñador. Soy un diseñador gráfica que ha dejado una huella significativa en la industria. Mi enfoque se basa en la fusión de la belleza visual con la funcionalidad práctica. Aquí hay algunos aspectos destacados de su carrera:</p>
+            <p>Minimalismo con Impacto: Creo que menos es más. Mis diseños son limpios, con una paleta de colores cuidadosamente seleccionada. Cada elemento tiene un propósito y comunica eficazmente el mensaje deseado.</p>
+            <p>Narrativa Visual: Soy un narradora apasionado. Sus ilustraciones y gráficos cuentan historias. Ya sea un logotipo para una startup o una portada de libro, siempre busca la esencia de la marca y la representa de manera única.</p>
+            <p>Colaboración Interdisciplinaria: No me limito al diseño gráfico tradicional. He trabajado en proyectos de diseño de interiores, creando espacios que son tanto funcionales como hermosos. También ha colaborado con arquitectos y artistas para crear instalaciones públicas.</p>
+            <p>Sostenibilidad y Ética: Soy consciente del impacto ambiental del diseño. Busca materiales sostenibles y promueve la conciencia ecológica en su trabajo. Además, se asegura de que sus diseños no perpetúen estereotipos o prejuicios.</p>
+            <p>Innovación Tecnológica: Estoy al tanto de las últimas tendencias tecnológicas. He explorado la realidad aumentada, la tipografía cinética y la animación. Siempre estoy dispuesta a aprender y adaptarme.</p>
+        </div>
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <p>Información de contacto para posibles clientes.</p>
+            <p>Teléfono: 3332634373</p>
+            <p>Correo: kaisergedeon@gmail.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio de Diseñador Gráfico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

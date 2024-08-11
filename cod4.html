@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes: Vacacionales</title>
+    <style>
+        body {
+            font-family: 'Constantia', serif;
+        }
+        .title {
+            font-size: 2em;
+            background-color: #3fbccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .image-card {
+            background-color: #3fbccc;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .image-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .image-card .caption {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Galería de Imágenes: Vacaciones</div>
+    <div class="gallery-container">
+        <div class="image-card">
+            <img src="viaje1.jpg" alt="Imagen 1">
+            <div class="caption">Paisaje de Montañas</div>
+        </div>
+        <div class="image-card">
+            <img src="viaje2.jpg" alt="Imagen 2">
+            <div class="caption">Atardecer en la playa</div>
+        </div>
+        <div class="image-card">
+            <img src="viaje3.jpg" alt="Imagen 3">
+            <div class="caption">Termales
+            </div>
+        </div>
+        <!-- Añadir más imágenes si es necesario -->
+    </div>
+</body>
+</html>

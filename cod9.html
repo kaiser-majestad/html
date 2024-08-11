@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Barra de navegación horizontal */
+        .nav-horizontal {
+            background-color: #014d4c;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .nav-horizontal a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-horizontal a:hover {
+            background-color: #8a0cb0;
+        }
+
+        /* Barra de navegación vertical */
+        .nav-vertical {
+            height: 100vh;
+            width: 240px; /* Ancho incrementado */
+            background-color: #000000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px; /* Incrementa el padding-top */
+        }
+
+        .nav-vertical a {
+            padding: 20px 10px; /* Aumenta el padding */
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 18px; /* Aumenta el tamaño del texto */
+        }
+
+        .nav-vertical a:hover {
+            background-color: #32002d;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            margin-left: 260px; /* Ajusta el margen izquierdo para acomodar la barra de navegación más ancha */
+            padding: 20px;
+        }
+
+        /* Estilo de las recetas */
+        .receta {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .receta img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .receta .texto {
+            max-width: 600px;
+        }
+
+        .recetas-categoria {
+            margin-bottom: 40px;
+        }
+
+        .recetas-categoria h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación horizontal -->
+    <div class="nav-horizontal">
+        <a href="#home">Inicio</a>
+        <a href="#recetas">Recetas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#acerca">Acerca de</a>
+    </div>
+
+    <!-- Barra de navegación vertical -->
+    <div class="nav-vertical">
+        <a href="#desayunos">Desayunos</a>
+        <a href="#almuerzos">Almuerzos</a>
+        <a href="#cenas">Cenas</a>
+    </div>
+
+    <!-- Barra de navegación horizontal -->
+    <div class="nav-horizontal">
+        <a href="#home">Inicio</a>
+        <a href="#recetas">Recetas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#acerca">Acerca de</a>
+    </div>
+
+    <!-- Barra de navegación vertical -->
+    <div class="nav-vertical">
+        <a href="#desayunos">Desayunos</a>
+        <a href="#almuerzos">Almuerzos</a>
+        <a href="#cenas">Cenas</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h1>Bienvenido a Recetas de Cocina</h1>
+        <p>Aquí encontrarás una variedad de recetas deliciosas para todos los gustos.</p>
+
+        <!-- Sección de Desayunos -->
+        <div id="desayunos" class="recetas-categoria">
+            <h2>Desayunos</h2>
+            <div class="receta">
+                <img src="desa.jpg" alt="Desayuno 1">
+                <div class="texto">
+                    <h3>Receta de Desayuno 1</h3>
+                    <p>Descripción de la receta de desayuno: Pancakes con Tocino y Huevo Frito
+                        Ingredientes:
+                        
+                        Para los pancakes:
+                        1 taza de harina
+                        2 cucharadas de azúcar
+                        1 cucharadita de polvo para hornear
+                        1/2 cucharadita de sal
+                        1 taza de leche
+                        1 huevo
+                        2 cucharadas de mantequilla derretida
+                        Para acompañar:
+                        Tocino
+                        Huevos
+                        Mantequilla
+                        Jarabe de maple (opcional)
+                        Instrucciones:
+                        
+                        Prepara la masa: En un bol grande, mezcla la harina, el azúcar, el polvo para hornear y la sal. En otro bol, bate el huevo y la leche. Combina ambas mezclas hasta obtener una masa homogénea. Incorpora la mantequilla derretida.
+                        Cocina los pancakes: Calienta una sartén antiadherente a fuego medio. Vierte un poco de masa en la sartén para formar círculos. Cocina hasta que se formen burbujas en la superficie y los bordes estén dorados. Voltea y cocina el otro lado. Repite hasta terminar la masa.
+                        Cocina el tocino: En una sartén aparte, cocina el tocino hasta que esté crujiente. Escurre sobre papel absorbente.
+                        Cocina los huevos: En la misma sartén donde cocinaste el tocino (si es necesario, limpia ligeramente), cocina los huevos al gusto.
+                        Sirve: Apila los pancakes en un plato, acompaña con el tocino crujiente y un huevo frito. Rocía con jarabe de maple si lo deseas..</p>
+                </div>
+            </div>
+            <div class="receta">
+                <img src="desa2.jpg" alt="Desayuno 2">
+                <div class="texto">
+                    <h3>Receta de Desayuno 2</h3>
+                    <p>Descripción de la receta de desayuno: Desayuno Completo: Jugo de Naranja, Café y Croissant
+
+                        Ingredientes:
+                        
+                        Jugo de naranja: Naranja fresca recién exprimida o jugo de naranja natural.
+                        Café: Tu tipo de café favorito (expreso, americano, capuchino, etc.).
+                        Croissant: Croissant fresco, de preferencia.
+                        Preparación:
+                        
+                        Exprime las naranjas: Si vas a utilizar naranjas frescas, exprímelas para obtener un jugo natural y delicioso.
+                        Prepara el café: Prepara tu café de la manera que más te guste. Puedes utilizar una cafetera, una máquina de espresso o preparar un café de filtro.
+                        Calienta el croissant: Si deseas, puedes calentar ligeramente el croissant en un tostador o en el horno para darle una textura más crujiente.
+                        Sirve: Coloca el jugo de naranja en un vaso, el café en otra taza y el croissant en un plato..</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Almuerzos -->
+        <div id="almuerzos" class="recetas-categoria">
+            <h2>Almuerzos</h2>
+            <div class="receta">
+                <img src="paisa.jpg" alt="Almuerzo 1">
+                <div class="texto">
+                    <h3>Receta de Almuerzo 1</h3>
+                    <p>Descripción de la receta de almuerzo: Bandeja Paisa: Un festín de sabores
+                        Ingredientes:
+                        
+                        Para los frijoles:
+                        1 libra de frijoles rojos
+                        1 cebolla larga
+                        2 tomates
+                        1 diente de ajo
+                        1 hoja de laurel
+                        Sal y pimienta al gusto
+                        Para el arroz:
+                        1 taza de arroz
+                        2 tazas de agua
+                        Sal al gusto
+                        Para el hogao:
+                        1 cebolla
+                        2 tomates
+                        1 pimiento rojo
+                        Aceite
+                        Sal y pimienta al gusto
+                        Además:
+                        Chicharrón
+                        Carne en polvo o carne desmechada
+                        Chorizo
+                        Huevo frito
+                        Plátano maduro frito
+                        Aguacate
+                        Arepa
+                        Preparación:
+                        
+                        Fríjoles: Remoja los frijoles desde la noche anterior. Luego, cocínalos en una olla a presión con la cebolla larga, el tomate, el ajo y el laurel hasta que estén suaves.
+                        Arroz: Cocina el arroz en agua con sal hasta que esté en su punto.
+                        Hogao: Pica finamente la cebolla, el tomate y el pimiento. Sofríe en aceite hasta que estén blandos. Sazona con sal y pimienta.
+                        Ensamblaje: Sirve el arroz en un plato grande. Agrega los frijoles, el hogao, el chicharrón, la carne en polvo o desmechada, el chorizo, el huevo frito, el plátano maduro frito, el aguacate y la arepa.
+                        Consejos:
+                        
+                        Carne en polvo: Si no encuentras carne en polvo, puedes utilizar carne desmechada de res o cerdo.
+                        Chicharrón: Puedes comprar chicharrón listo o prepararlo tú mismo.
+                        Plátano maduro: Elige plátanos maduros para freírlos y obtener una textura suave y dulce.
+                        Aguacate: El aguacate le dará un toque cremoso y nutritivo a tu bandeja paisa.</p>
+                </div>
+            </div>
+            <div class="receta">
+                <img src="paisa2.jpg" alt="Almuerzo 2">
+                <div class="texto">
+                    <h3>Receta de Almuerzo 2</h3>
+                    <p>Descripción de la receta de almuerzo: Chicharrón con Frijoles
+
+                        Ingredientes:
+                        
+                        Para el chicharrón:
+                        1 kg de cuero de cerdo
+                        Sal al gusto
+                        Para los frijoles:
+                        500 gramos de frijoles negros (o los de tu preferencia)
+                        1 cebolla
+                        2 dientes de ajo
+                        1 hoja de laurel
+                        Sal y pimienta al gusto
+                        Acompañamientos (opcional):
+                        Arroz blanco
+                        Aguacate
+                        Tortillas de maíz
+                        Salsa picante
+                        Preparación:
+                        
+                        Chicharrón:
+                        
+                        Lava bien el cuero de cerdo y córtalo en trozos medianos.
+                        Cocina los trozos de cuero en una olla con suficiente agua hasta que estén blandos.
+                        Escurre el agua y reserva los trozos de cuero.
+                        Fríe los trozos de cuero en una olla con abundante aceite a fuego medio hasta que estén dorados y crujientes. Escurre sobre papel absorbente.
+                        Sazona el chicharrón con sal al gusto.
+                        Frijoles:
+                        
+                        Remoja los frijoles en agua desde la noche anterior.
+                        Escurre los frijoles y cocínalos en una olla con suficiente agua, cebolla, ajo y hoja de laurel hasta que estén suaves.
+                        Sazona con sal y pimienta al gusto.
+                        Servir:
+                        
+                        Sirve los frijoles en un plato hondo y encima coloca el chicharrón crujiente.
+                        Acompaña con arroz blanco, aguacate en rodajas, tortillas de maíz y salsa picante al gusto..</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Cenas -->
+        <div id="cenas" class="recetas-categoria">
+            <h2>Cenas</h2>
+            <div class="receta">
+                <img src="cena1.jpg" alt="Cena 1">
+                <div class="texto">
+                    <h3>Receta de Cena 1</h3>
+                    <p>Descripción de la receta de cena: Rollo de Carne Relleno
+
+                        Ingredientes:
+                        1 kg de carne molida (res o mezclada con cerdo)
+                        1 cebolla grande, picada
+                        2 dientes de ajo, picados
+                        1 huevo
+                        1 taza de pan rallado
+                        1/2 taza de leche
+                        1/2 taza de perejil picado
+                        Sal y pimienta al gusto
+                        1/2 taza de queso mozzarella rallado
+                        2 rebanadas de jamón
+                        2 huevos duros
+                        1 zanahoria rallada
+                        Papel aluminio
+                        Preparación:
+                        Prepara la mezcla de carne: En un bol grande, combina la carne molida, cebolla, ajo, huevo, pan rallado, leche, perejil, sal y pimienta. Mezcla bien hasta obtener una masa homogénea.
+                        Arma el rollo: Extiende la mezcla de carne sobre una lámina de papel aluminio. Coloca el queso mozzarella, jamón y huevos duros en el centro. Espolvorea la zanahoria rallada por encima.
+                        Enrolla: Con ayuda del papel aluminio, enrolla la carne con cuidado para formar un rollo compacto. Cierra bien los extremos del rollo con el papel aluminio.
+                        Hornea: Coloca el rollo en una bandeja para horno y hornea a 180°C durante aproximadamente 1 hora o hasta que la carne esté cocida.
+                        Sirve: Retira el rollo del horno, deja reposar unos minutos antes de cortarlo. Sírvelo caliente con tu guarnición favorita, como papas al horno o ensalada..</p>
+                </div>
+            </div>
+            <div class="receta">
+                <img src="cena2.jpg" alt="Cena 2">
+                <div class="texto">
+                    <h3>Receta de Cena 2</h3>
+                    <p>Descripción de la receta de cena: ¡Absolutamente! El lomo al vino es un clásico que combina la suavidad de la carne con la intensidad del vino tinto. Aquí te presento una receta deliciosa y fácil de seguir:
+
+                        Lomo al Vino Tinto
+                        Ingredientes:
+                        1 kg de lomo de res
+                        Sal y pimienta negra recién molida al gusto
+                        2 cucharadas de aceite de oliva
+                        2 cebollas medianas, picadas
+                        2 dientes de ajo, picados
+                        1 taza de vino tinto seco
+                        1 taza de caldo de carne
+                        1 rama de romero fresco
+                        1 hoja de laurel
+                        1 cucharada de maicena disuelta en 2 cucharadas de agua fría (para espesar la salsa)
+                        Champiñones frescos (opcional), para acompañar
+                        Instrucciones:
+                        Sella el lomo:
+                        
+                        Precalienta una olla grande a fuego medio-alto.
+                        Sazona el lomo por todos lados con sal y pimienta.
+                        Sella el lomo en el aceite caliente hasta que esté dorado por todos los lados. Retira y reserva.
+                        Sofríe las verduras:
+                        
+                        En la misma olla, agrega la cebolla y el ajo picados. Sofríe hasta que estén transparentes.
+                        Desglaza y cocina:
+                        
+                        Vierte el vino tinto en la olla y raspa el fondo con una cuchara de madera para desprender los jugos de la carne.
+                        Agrega el caldo de carne, el romero y la hoja de laurel.
+                        Lleva a ebullición y reduce el fuego.
+                        Regresa el lomo a la olla.
+                        Cocina a fuego lento:
+                        
+                        Tapa la olla y cocina a fuego bajo durante aproximadamente 1 hora o hasta que la carne esté tierna.
+                        Espesa la salsa:
+                        
+                        Retira el lomo de la olla y reserva.
+                        Agrega la maicena disuelta en agua fría a la salsa y cocina a fuego medio, revolviendo constantemente, hasta que espese.
+                        Servir:
+                        
+                        Corta el lomo en rebanadas y sírvelo bañado con la salsa.
+                        Acompaña con puré de papas, arroz blanco o champiñones salteados..</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Restaurante</title>
+    <style>
+        body {
+            font-family: Constantia, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #980202;
+            border-radius: 5px;
+            padding: 20px;
+            width: calc(50% - 40px); /* Ajustar según el diseño deseado */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .item h3 {
+            margin-top: 0;
+        }
+
+        .recipe {
+            display: none;
+            background-color: #444;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .rating {
+            margin-top: 10px;
+        }
+
+        .star {
+            color: #ccc;
+            font-size: 20px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .star:hover,
+        .star.selected {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Menú de Restaurante</h1>
+        <div class="category">
+            <h2>Postres</h2>
+            <div class="items">
+                <div class="item" onclick="toggleRecipe(this)">
+                    <img src="tiramisu.jpg" alt="Tiramisú">
+                    <h3>Tiramisú</h3>
+                    <div class="recipe">
+                        <p>Ingredientes:</p>
+                        <ul>
+                            <li>Queso mascarpone</li>
+                            <li>Café</li>
+                            <li>Cacao</li>
+                            <li>Bizcochos</li>
+                            <li>Azúcar</li>
+                            <li>Huevos</li>
+                        </ul>
+                        <p>Instrucciones: Batir los huevos con el azúcar, añadir mascarpone y café, y montar en capas con los bizcochos y cacao. Refrigerar antes de servir.</p>
+                    </div>
+                    <div class="rating">
+                        <span class="star" onclick="rate(this, 1)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 2)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 3)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 4)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 5)">&#9733;</span>
+                    </div>
+                </div>
+                <div class="item" onclick="toggleRecipe(this)">
+                    <img src="cheesecake.jpg" alt="Cheesecake">
+                    <h3>Cheesecake</h3>
+                    <div class="recipe">
+                        <p>Ingredientes:</p>
+                        <ul>
+                            <li>Galletas</li>
+                            <li>Mantequilla</li>
+                            <li>Queso crema</li>
+                            <li>Azúcar</li>
+                            <li>Huevos</li>
+                            <li>Vainilla</li>
+                        </ul>
+                        <p>Instrucciones: Mezclar las galletas trituradas con mantequilla para la base. Batir el queso crema con azúcar y huevos, verter sobre la base y hornear.</p>
+                    </div>
+                    <div class="rating">
+                        <span class="star" onclick="rate(this, 1)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 2)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 3)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 4)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 5)">&#9733;</span>
+                    </div>
+                </div>
+                <!-- Más postres aquí -->
+            </div>
+        </div>
+        <div class="category">
+            <h2>Bebidas</h2>
+            <div class="items">
+                <div class="item" onclick="toggleRecipe(this)">
+                    <img src="mojito.jpg" alt="Mojito">
+                    <h3>Mojito</h3>
+                    <div class="recipe">
+                        <p>Ingredientes:</p>
+                        <ul>
+                            <li>Ron blanco</li>
+                            <li>Menta fresca</li>
+                            <li>Azúcar</li>
+                            <li>Limón</li>
+                            <li>Soda</li>
+                        </ul>
+                        <p>Instrucciones: Machacar la menta con azúcar, añadir ron y jugo de limón, completar con soda y hielo.</p>
+                    </div>
+                    <div class="rating">
+                        <span class="star" onclick="rate(this, 1)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 2)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 3)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 4)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 5)">&#9733;</span>
+                    </div>
+                </div>
+                <div class="item" onclick="toggleRecipe(this)">
+                    <img src="limonada.jpg" alt="Limonada">
+                    <h3>Limonada</h3>
+                    <div class="recipe">
+                        <p>Ingredientes:</p>
+                        <ul>
+                            <li>Limones</li>
+                            <li>Azúcar</li>
+                            <li>Agua</li>
+                            <li>Hielo</li>
+                        </ul>
+                        <p>Instrucciones: Exprimir los limones y mezclar el jugo con azúcar y agua. Servir con hielo.</p>
+                    </div>
+                    <div class="rating">
+                        <span class="star" onclick="rate(this, 1)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 2)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 3)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 4)">&#9733;</span>
+                        <span class="star" onclick="rate(this, 5)">&#9733;</span>
+                    </div>
+                </div>
+                <!-- Más bebidas aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleRecipe(element) {
+            const recipe = element.querySelector('.recipe');
+            recipe.style.display = recipe.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function rate(star, rating) {
+            event.stopPropagation();
+            const stars = star.parentElement.querySelectorAll('.star');
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.add('selected');
+                } else {
+                    s.classList.remove('selected');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+

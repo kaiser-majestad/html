@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes de Naturaleza</title>
+    <style>
+        body {
+            font-family: 'Constaantia', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #140128;
+        }
+
+        header {
+            background-color: #2f004c;
+            color: white;
+            padding: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .galeria img {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Imágenes: Naturaleza</h1>
+    </header>
+    <main>
+        <ul class="galeria">
+            <li><img src="nat.jpg" alt="Naturaleza 1"></li>
+            <li><img src="nat2.jpg" alt="Naturaleza 2"></li>
+            <li><img src="nat3.jpg" alt="Naturaleza 3"></li>
+            <li><img src="nat4.jpg" alt="Naturaleza 4"></li>
+            <li><img src="nat5.jpg" alt="Naturaleza 5"></li>
+            <li><img src="nat6.jpg" alt="Naturaleza 6"></li>
+        </ul>
+    </main>
+</body>
+</html>
+
+

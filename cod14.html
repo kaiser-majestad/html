@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Noticias</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Estilos de la sección principal */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            width: 80%;
+            margin: 20px auto;
+            flex-grow: 1;
+        }
+
+        .main-content article {
+            background-color: #f4f4f4;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sitio de Noticias</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <aside>
+            <h2>Últimas Noticias</h2>
+            <p><a href="noticia1.html">Noticia destacada 1</a></p>
+            <p><a href="noticia2.html">Noticia destacada 2</a></p>
+            <p><a href="noticia3.html">Noticia destacada 3</a></p>
+        </aside>
+        <article>
+            <h2>Titular Principal</h2>
+            <p>Contenido del artículo principal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat felis nec velit tincidunt, vel facilisis dui vehicula.</p>
+            <p>Leer más sobre esta noticia en <a href="noticia-detalles.html">Detalles de la noticia</a>.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sitio de Noticias. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
